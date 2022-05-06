@@ -11,8 +11,6 @@ import androidx.fragment.app.Fragment;
 public class LoginFragment extends Fragment {
 
 
-    public LoginFragment() {
-    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

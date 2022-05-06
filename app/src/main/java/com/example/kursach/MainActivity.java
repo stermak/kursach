@@ -1,5 +1,6 @@
 package com.example.kursach;
 
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,28 +12,28 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+
 public class MainActivity extends AppCompatActivity {
 
-    Button btn;
-    Button btn2;
-    Button btn3;
-    Button btn4;
-    Button btn5;
-    Button btn6;
-    Button btn7;
-    Button btn8;
-    Button btn9;
-    Button btn10;
-    TextView name;
-    CalendarView calendar;
+
+    public Button btn;
+    public Button btn2;
+    public Button btn3;
+    public Button btn4;
+    public Button btn5;
+    public Button btn6;
+    public Button btn7;
+    public Button btn8;
+    public Button btn9;
+    public Button btn10;
+    public TextView name;
+    public CalendarView calendar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         //кнопки
         btn = findViewById(R.id.btn);
         btn2 = findViewById(R.id.btn2);
@@ -44,12 +45,11 @@ public class MainActivity extends AppCompatActivity {
         btn8 = findViewById(R.id.btn8);
         btn9 = findViewById(R.id.btn9);
         btn10 = findViewById(R.id.btn10);
-
+        //другое
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
-
-
     }
+
 
     public void onClick(View view) {
         Fragment fragment = null;
