@@ -70,7 +70,7 @@
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/btn_register"
+            android:id="@+id/btn_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -85,8 +85,9 @@
             android:layout_height="30dp"
             android:layout_above="@id/swipeLeft"
             android:layout_centerHorizontal="true"
+            android:contentDescription="@string/SwipeLeft"
             android:src="@drawable/ic_arrow_left"
-            android:contentDescription="@string/SwipeLeft" />
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/swipeLeft"
@@ -95,9 +96,10 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="60dp"
-            android:textColor="#E8EAF6"
             android:text="@string/SwipeLeft"
-            android:textSize="15sp" />
+            android:textColor="#E8EAF6"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
 
     </RelativeLayout>
 

@@ -20,14 +20,17 @@ public class MainActivity extends AppCompatActivity {
     Button btn5;
     Button btn6;
     Button btn7;
+    Button btn8;
+    Button btn9;
+    Button btn10;
     TextView name;
     CalendarView calendar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
         //кнопки
@@ -38,12 +41,17 @@ public class MainActivity extends AppCompatActivity {
         btn5 = findViewById(R.id.btn5);
         btn6 = findViewById(R.id.btn6);
         btn7 = findViewById(R.id.btn7);
+        btn8 = findViewById(R.id.btn8);
+        btn9 = findViewById(R.id.btn9);
+        btn10 = findViewById(R.id.btn10);
+
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
 
 
     }
-    public void onClick (View view) {
+
+    public void onClick(View view) {
         Fragment fragment = null;
 
         switch (view.getId()) {

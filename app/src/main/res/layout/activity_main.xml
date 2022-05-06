@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
     tools:context=".MainActivity">
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/HomeFragment"
         android:name="com.example.kursach.HomeFragment"
@@ -16,7 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </androidx.fragment.app.FragmentContainerView>
 
     <TextView

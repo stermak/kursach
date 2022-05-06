@@ -19,4 +19,6 @@
     <string name="RetypePassword">Повтори Пароль</string>
     <string name="Registration">Регистрация</string>
     <string name="SwipeLeft">Свайпни Влево</string>
+    <string name="LightTheme">Светлая</string>
+    <string name="DarkTheme">Темная</string>
 </resources>

@@ -19,4 +19,6 @@
     <string name="RetypePassword">RetypePassword</string>
     <string name="Registration">Registration</string>
     <string name="SwipeLeft">SwipeLeft</string>
+    <string name="LightTheme">Light</string>
+    <string name="DarkTheme">Dark</string>
 </resources>
