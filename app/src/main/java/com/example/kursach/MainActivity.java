@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //кнопки
         btn = findViewById(R.id.btn);
         btn2 = findViewById(R.id.btn2);
@@ -79,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
             case (R.id.btn8):
                 fragment = new LoginFragment();
                 break;
+            case (R.id.btnlog):
+                if(!Data.accept){
+                    fragment = new RegisterFragment();
+                }
+                else {
+                    fragment = new ProfileFragment();
+                    break;
+                }
         }
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();

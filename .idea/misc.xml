@@ -6,11 +6,11 @@
         <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/drawable/ic_arrow_left.xml" value="0.152" />
         <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/drawable/ic_arrow_right.xml" value="0.152" />
         <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_create.xml" value="0.33" />
+        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_create.xml" value="0.25" />
         <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_home.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_login.xml" value="0.22" />
-        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_profile.xml" value="0.16" />
-        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_register.xml" value="0.22" />
+        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
         <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_spisok.xml" value="0.33" />
         <entry key="..\:/Users/ermak/AndroidStudioProjects/Kursach/app/src/main/res/layout/fragment_themes.xml" value="0.33" />

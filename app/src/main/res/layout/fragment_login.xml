@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,27 +8,28 @@
 
 
     <EditText
-        android:id="@+id/et_email"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_above="@id/et_password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:autofillHints="emailAddress"
-        android:hint="@string/Email"
-        android:inputType="textEmailAddress"
+        android:id="@+id/userName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="200dp"
+        android:autofillHints="username"
+        android:ems="10"
+        android:hint="@string/Login"
+        android:inputType="text"
         android:padding="15dp"
+        android:textColor="@color/white"
         android:textColorHint="#E8EAF6"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <EditText
-        android:id="@+id/et_password"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
+        android:id="@+id/editTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="250dp"
         android:autofillHints="password"
         android:hint="@string/Password"
         android:inputType="textPassword"
@@ -36,36 +37,26 @@
         android:textColorHint="#FBE9E7"
         android:textSize="15sp" />
 
-    <Button
-        android:id="@+id/btn_log"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/Login"
-        android:textColor="#651FFF" />
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_above="@id/swipeRight"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/SwipeRight"
-        android:src="@drawable/ic_arrow_right"
-        tools:ignore="ImageContrastCheck" />
-
     <TextView
-        android:id="@+id/swipeRight"
+        android:id="@+id/info2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:text="@string/SwipeRight"
-        android:textColor="#FAFAFA"
-        android:textSize="15sp"
-        tools:ignore="TextContrastCheck" />
+        android:text=""
+        android:layout_gravity="center|top"
+        android:layout_marginTop="310dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/Login"
+        android:textColor="#E1BEE7" />
+
+</FrameLayout>

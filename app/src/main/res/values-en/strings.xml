@@ -21,4 +21,6 @@
     <string name="SwipeLeft">SwipeLeft</string>
     <string name="LightTheme">Light</string>
     <string name="DarkTheme">Dark</string>
+    <string name="Phone">Номер телефона</string>
+    <string name="Ermak">Ermak</string>
 </resources>
