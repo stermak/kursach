@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Kursach</string>
+    <string name="app_name">Гарантийные Сроки</string>
     <string name="hello_blank_fragment">Я новый фрагмент</string>
     <string name="Profile">Профиль</string>
     <string name="Themes">Темы приложения</string>

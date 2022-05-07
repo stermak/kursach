@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Kursach</string>
+    <string name="app_name">Warranty Period</string>
     <string name="hello_blank_fragment">I am new fragment</string>
     <string name="Profile">Profile</string>
     <string name="Themes">Themes</string>
@@ -21,6 +21,6 @@
     <string name="SwipeLeft">SwipeLeft</string>
     <string name="LightTheme">Light</string>
     <string name="DarkTheme">Dark</string>
-    <string name="Phone">Номер телефона</string>
+    <string name="Phone">Number Phone</string>
     <string name="Ermak">Ermak</string>
 </resources>
