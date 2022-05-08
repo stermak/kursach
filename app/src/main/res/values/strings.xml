@@ -9,7 +9,6 @@
     <string name="List">Список</string>
     <string name="Settings">Настройки</string>
     <string name="Text_name">warranty \t\t periods</string>
-    <string name="EnterOnCreate">Введите Текст</string>
     <string name="NameCompany">Название фирмы</string>
     <string name="SendToSpisok">Отправить</string>
     <string name="Login">Логин</string>
@@ -23,4 +22,6 @@
     <string name="DarkTheme">Темная</string>
     <string name="Phone">Номер телефона</string>
     <string name="Ermak">Ermak</string>
+    <string name="NameTechnics">Название техники</string>
+    <string name="DateWarranty">Дата гарантии</string>
 </resources>

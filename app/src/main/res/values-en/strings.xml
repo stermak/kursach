@@ -9,7 +9,6 @@
     <string name="List">List</string>
     <string name="Settings">Settings</string>
     <string name="Text_name">warranty \t\t periods</string>
-    <string name="EnterOnCreate">Enter name</string>
     <string name="NameCompany">Name Company</string>
     <string name="SendToSpisok">Send</string>
     <string name="Login">Login</string>
@@ -23,4 +22,6 @@
     <string name="DarkTheme">Dark</string>
     <string name="Phone">Number Phone</string>
     <string name="Ermak">Ermak</string>
+    <string name="NameTechnics">Name Technics</string>
+    <string name="DateWarranty">Date Warranty</string>
 </resources>
