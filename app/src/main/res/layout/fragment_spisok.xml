@@ -22,6 +22,7 @@
 
     <ListView
         android:id="@+id/listView"
+        android:choiceMode="multipleChoice"
         android:layout_width="411dp"
         android:layout_height="611dp"
         android:layout_marginTop="60dp"
