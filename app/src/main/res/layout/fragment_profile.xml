@@ -3,30 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_drawable"
-    tools:context="com.example.kursach.ProfileFragment">
+    tools:context=".ProfileFragment"
+    android:background="@drawable/gradient_drawable">
 
-    <TextView
-        android:id="@+id/nameLogin"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/privacyButton"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center"
-        android:layout_marginTop="40dp"
-        android:text="@string/Ermak"
-        android:textColor="@color/white"
-        android:textSize="24sp"
+        android:layout_marginTop="410dp"
+        android:background="@color/white"
+        android:text="@string/Privacy"
+        android:textAllCaps="false"
+        android:textColor="#039BE5"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/yourPhone"
-        android:layout_width="200dp"
-        android:textAlignment="center"
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text=""
-        android:layout_gravity="center|top"
-        android:layout_marginTop="200dp"
-        android:inputType="phone"
-        android:autofillHints="phone"
-        tools:ignore="LabelFor" />
+        android:layout_gravity="top|center"
+        android:layout_marginTop="550dp"
+        android:background="@color/white"
+        android:text="@string/Exit"
+        android:textAllCaps="false"
+        android:textColor="#757575" />
 
 </FrameLayout>

@@ -24,4 +24,7 @@
     <string name="Ermak">Ermak</string>
     <string name="NameTechnics">Name Technics</string>
     <string name="DateWarranty">Date Warranty</string>
+    <string name="Update">Update</string>
+    <string name="Privacy">Privacy</string>
+    <string name="Exit">Exit</string>
 </resources>

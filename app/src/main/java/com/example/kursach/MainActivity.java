@@ -22,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
     public Button btn4;
     public Button btn5;
     public Button btn6;
-    public Button btn7;
-    public Button btn8;
-    public Button btn9;
-    public Button btn10;
     public TextView name;
     public CalendarView calendar;
 
@@ -42,10 +38,6 @@ public class MainActivity extends AppCompatActivity {
         btn4 = findViewById(R.id.btn4);
         btn5 = findViewById(R.id.btn5);
         btn6 = findViewById(R.id.btn6);
-        btn7 = findViewById(R.id.btn7);
-        btn8 = findViewById(R.id.btn8);
-        btn9 = findViewById(R.id.btn9);
-        btn10 = findViewById(R.id.btn10);
         //другое
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
@@ -74,20 +66,6 @@ public class MainActivity extends AppCompatActivity {
             case (R.id.btn6):
                 fragment = new ProfileFragment();
                 break;
-            case (R.id.btn7):
-                fragment = new RegisterFragment();
-                break;
-            case (R.id.btn8):
-                fragment = new LoginFragment();
-                break;
-            case (R.id.btnlog):
-                if(!Data.accept){
-                    fragment = new RegisterFragment();
-                }
-                else {
-                    fragment = new ProfileFragment();
-                    break;
-                }
         }
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();

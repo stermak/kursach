@@ -24,4 +24,7 @@
     <string name="Ermak">Ermak</string>
     <string name="NameTechnics">Название техники</string>
     <string name="DateWarranty">Дата гарантии</string>
+    <string name="Update">Обновить</string>
+    <string name="Privacy">Конфиденциальность</string>
+    <string name="Exit">Выход</string>
 </resources>
