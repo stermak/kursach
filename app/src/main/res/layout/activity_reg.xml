@@ -16,7 +16,7 @@
         android:background="@color/white"
         android:ems="10"
         android:hint="@string/Login"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:textAlignment="center"
         android:textColorHint="#757575"
         tools:ignore="DuplicateSpeakableTextCheck" />
