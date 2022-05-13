@@ -13,6 +13,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.kursach.Add.CreateFragment;
+import com.google.firebase.auth.FirebaseAuth;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     public Button btn6;
     public TextView name;
     public CalendarView calendar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         //другое
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
+
     }
 
 
