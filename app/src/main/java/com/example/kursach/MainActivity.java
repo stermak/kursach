@@ -12,20 +12,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kursach.Add.CreateFragment;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+
 
 public class MainActivity extends AppCompatActivity {
 
     public Button btn;
     public Button btn2;
     public Button btn3;
-    public Button btn4;
     public Button btn5;
     public Button btn6;
     public TextView name;
@@ -39,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         btn = findViewById(R.id.btn);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
-        btn4 = findViewById(R.id.btn4);
         btn5 = findViewById(R.id.btn5);
         btn6 = findViewById(R.id.btn6);
         //другое
@@ -63,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new HomeFragment();
                 break;
             case (R.id.btn2):
+                fragment = new SettingsFragment();
+                break;
+            case (R.id.btn4):
                 fragment = new SettingsFragment();
                 break;
             case (R.id.btn5):

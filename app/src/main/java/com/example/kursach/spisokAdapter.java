@@ -16,17 +16,6 @@ public class spisokAdapter extends FirebaseRecyclerAdapter<spisok, spisokAdapter
         super(options);
     }
 
-    public static class spisoksViewholder extends RecyclerView.ViewHolder {
-        TextView WarrantyName, CompanyName, year1;
-        public spisoksViewholder(@NonNull View itemView)
-        {
-            super(itemView);
-            WarrantyName = itemView.findViewById(R.id.WarrantyName);
-            CompanyName = itemView.findViewById(R.id.CompanyName);
-            year1 = itemView.findViewById(R.id.year1);
-        }
-    }
-
     @Override
     public void
     onBindViewHolder(@NonNull spisoksViewholder holder,int position, @NonNull spisok model)
@@ -42,6 +31,17 @@ public class spisokAdapter extends FirebaseRecyclerAdapter<spisok, spisokAdapter
     public spisoksViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.spisok, parent, false);
-        return new spisoksViewholder(view);
+        return new spisokAdapter.spisoksViewholder(view);
+    }
+
+    class spisoksViewholder extends RecyclerView.ViewHolder {
+        TextView WarrantyName, CompanyName, year1;
+        public spisoksViewholder(@NonNull View itemView)
+        {
+            super(itemView);
+            WarrantyName = itemView.findViewById(R.id.WarrantyName);
+            CompanyName = itemView.findViewById(R.id.CompanyName);
+            year1 = itemView.findViewById(R.id.year1);
+        }
     }
 }
