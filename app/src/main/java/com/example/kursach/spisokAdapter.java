@@ -17,13 +17,13 @@ public class spisokAdapter extends FirebaseRecyclerAdapter<spisok, spisokAdapter
     }
 
     public static class spisoksViewholder extends RecyclerView.ViewHolder {
-        TextView WarrantyName, CompanyName, year;
+        TextView WarrantyName, CompanyName, year1;
         public spisoksViewholder(@NonNull View itemView)
         {
             super(itemView);
             WarrantyName = itemView.findViewById(R.id.WarrantyName);
             CompanyName = itemView.findViewById(R.id.CompanyName);
-            year = itemView.findViewById(R.id.year);
+            year1 = itemView.findViewById(R.id.year1);
         }
     }
 
@@ -34,7 +34,7 @@ public class spisokAdapter extends FirebaseRecyclerAdapter<spisok, spisokAdapter
 
         holder.WarrantyName.setText(model.getWarrantyName());
         holder.CompanyName.setText(model.getCompanyName());
-        holder.year.setText(model.getYear());
+        holder.year1.setText(model.getYear1());
     }
 
     @NonNull

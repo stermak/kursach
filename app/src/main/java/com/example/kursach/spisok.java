@@ -1,15 +1,15 @@
 package com.example.kursach;
 
 public class spisok {
-    private String WarrantyName ,CompanyName , year;
+    private String WarrantyName ,CompanyName , year1;
 
 
     public spisok() {}
 
-    public spisok(String WarrantyName, String CompanyName, String year) {
+    public spisok(String WarrantyName, String CompanyName, String year1) {
         this.WarrantyName = WarrantyName;
         this.CompanyName = CompanyName;
-        this.year = year;
+        this.year1 = year1;
     }
 
     public String getWarrantyName()
@@ -28,12 +28,12 @@ public class spisok {
     {
         this.CompanyName = CompanyName;
     }
-    public String getYear()
+    public String getYear1()
     {
-        return year;
+        return year1;
     }
-    public void setYear(String year)
+    public void setYear1(String year1)
     {
-        this.year = year;
+        this.year1 = year1;
     }
 }
