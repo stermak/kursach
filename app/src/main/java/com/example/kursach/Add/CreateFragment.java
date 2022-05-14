@@ -23,8 +23,6 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -52,7 +50,6 @@ public class CreateFragment extends Fragment {
     FirebaseStorage storage;
     StorageReference storageRef;
     LoadingDialog loadingDialog;
-
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -161,6 +158,7 @@ public class CreateFragment extends Fragment {
         }
         return  checked;
     }
+
     private void uploadImage(Map<String, Object> docData){
         loadingDialog.startLoading();
 
@@ -192,7 +190,7 @@ public class CreateFragment extends Fragment {
     }
     private void uploadDocument(Map<String, Object> docData, String docId){
         loadingDialog.startLoading();
-        db.collection("warranty")
+        db.collection("list")
                 .document(docId)
                 .set(docData)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,9 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.kursach.Add.CreateFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
-
 public class MainActivity extends AppCompatActivity {
-
 
     public Button btn;
     public Button btn2;
@@ -28,11 +25,14 @@ public class MainActivity extends AppCompatActivity {
     public Button btn6;
     public TextView name;
     public CalendarView calendar;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mAuth = FirebaseAuth.getInstance();
 
         //кнопки
         btn = findViewById(R.id.btn);
@@ -44,9 +44,7 @@ public class MainActivity extends AppCompatActivity {
         //другое
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
-
     }
-
 
     public void onClick(View view) {
         Fragment fragment = null;
