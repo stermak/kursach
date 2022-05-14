@@ -25,6 +25,9 @@
             android:exported="false" />
         <activity
             android:name=".RegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpisokActivity"
             android:exported="false">
         </activity>
     </application>

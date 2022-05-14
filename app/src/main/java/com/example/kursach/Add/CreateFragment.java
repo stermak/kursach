@@ -45,7 +45,7 @@ public class CreateFragment extends Fragment {
     Uri imgUri;
     ChipGroup chips;
     Button submitBtn;
-    EditText name, name2, desc, year;
+    EditText name1, name2, desc, year;
     FirebaseFirestore db;
     FirebaseStorage storage;
     StorageReference storageRef;
@@ -58,7 +58,7 @@ public class CreateFragment extends Fragment {
         img = root.findViewById(R.id.imageView2);
         chips = root.findViewById(R.id.chips);
         submitBtn = root.findViewById(R.id.button2);
-        name = root.findViewById(R.id.NameTechnics);
+        name1 = root.findViewById(R.id.NameTechnics);
         name2 = root.findViewById(R.id.NameCompany);
         year = root.findViewById(R.id.year);
         desc = root.findViewById(R.id.desc);
@@ -85,10 +85,10 @@ public class CreateFragment extends Fragment {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String NameTechnics = name.getText().toString();
+                String NameTechnics = name1.getText().toString();
                 if(NameTechnics.isEmpty()){
-                    name.setError("Name needed");
-                    name.requestFocus();
+                    name1.setError("Name needed");
+                    name1.requestFocus();
                     return;
                 }
                 String NameCompany = name2.getText().toString();
@@ -120,7 +120,7 @@ public class CreateFragment extends Fragment {
                 }
 
                 Map<String, Object> docData = new HashMap<>();
-                docData.put("name", NameTechnics);
+                docData.put("name1", NameTechnics);
                 docData.put("name2", NameCompany);
                 docData.put("year", DateWarranty);
                 docData.put("description", description);
@@ -212,7 +212,7 @@ public class CreateFragment extends Fragment {
     private void clearForm(){
         img.setImageResource(R.drawable.ic_lmovie_placeholder);
         imgSet = false;
-        name.getText().clear();
+        name1.getText().clear();
         name2.getText().clear();
         year.getText().clear();
         desc.getText().clear();

@@ -1,6 +1,7 @@
 package com.example.kursach;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,9 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kursach.Add.CreateFragment;
-import com.google.firebase.auth.FirebaseAuth;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,15 +30,11 @@ public class MainActivity extends AppCompatActivity {
     public Button btn6;
     public TextView name;
     public CalendarView calendar;
-    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mAuth = FirebaseAuth.getInstance();
-
         //кнопки
         btn = findViewById(R.id.btn);
         btn2 = findViewById(R.id.btn2);
@@ -44,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
         //другое
         name = findViewById(R.id.name);
         calendar = findViewById(R.id.calend);
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SpisokActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onClick(View view) {
@@ -55,12 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case (R.id.btn2):
                 fragment = new SettingsFragment();
-                break;
-            case (R.id.btn3):
-                fragment = new SpisokFragment();
-                break;
-            case (R.id.btn4):
-                fragment = new CreateFragment();
                 break;
             case (R.id.btn5):
                 fragment = new ThemesFragment();
@@ -75,4 +78,5 @@ public class MainActivity extends AppCompatActivity {
         ft.replace(R.id.HomeFragment, fragment);
         ft.commit();
     }
+
 }

@@ -47,7 +47,7 @@
         android:id="@+id/btn3"
         android:layout_width="122dp"
         android:layout_height="60dp"
-        android:onClick="onClick"
+        android:onClick="onClick1"
         android:text="@string/List"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
